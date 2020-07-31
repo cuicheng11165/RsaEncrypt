@@ -1,0 +1,23 @@
+﻿<Window x:Class="Tool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tool"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Input" Height="30" Margin="39,135,677,234" ></Label>
+        <Label Content="Output" Height="30" Margin="39,226,677,143" />
+        <Label Content="Thrumbprint" Height="30" Margin="39,55,650,334" />
+
+
+        <TextBox Name="text1" Height="30" Margin="147,135,360,234" />
+        <TextBox Name="text2" Height="30" Margin="147,226,360,143" />
+        <TextBox x:Name="text_thrumbprint" Height="30" Margin="147,45,360,324" />
+
+        <Button x:Name="btn_en"  Content="Encrypt" Click="Button_Click"  Margin="577,143,115,246" ></Button>
+        <Button x:Name="btn_de"   Content="Decrypt" Click="btn_de_Click" Margin="577,236,115,153" />
+
+    </Grid>
+</Window>
